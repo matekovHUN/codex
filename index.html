@@ -17,23 +17,30 @@
                     <h1>🏠 Kicsi Csángó</h1>
                 </div>
                 <ul class="nav-menu">
+                    <li><a href="#home">Otthon</a></li>
                     <li><a href="#about">Rólunk</a></li>
                     <li><a href="#menu">Étlap</a></li>
-                    <li><a href="#gallery">Hangulat</a></li>
+                    <li><a href="#gallery">Galéria</a></li>
+                    <li><a href="#reviews">Vélemények</a></li>
                     <li><a href="#contact">Kapcsolat</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION WITH IMAGE -->
     <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="placeholder-image" style="background: linear-gradient(135deg, #2d1b2e 0%, #1a1a1a 100%);">
+                <span style="font-size: 8em; opacity: 0.2;">🍲</span>
+            </div>
+        </div>
         <div class="hero-content">
             <h2>Kicsi Csángó Magyar Konyha</h2>
             <p class="hero-subtitle">Autentikus magyar ízek • Csángó hagyományok • Meleg vendéglátás</p>
             <div class="hero-ctas">
-                <button class="cta-primary" onclick="scrollToBooking()">📅 Asztalfoglalás</button>
-                <a href="tel:+36307243676" class="cta-secondary">📞 Hívás most: +36 30 724 3676</a>
+                <button class="cta-primary" onclick="scrollToBooking()">📅 Asztalfoglalás Most</button>
+                <a href="tel:+36307243676" class="cta-secondary">📞 +36 30 724 3676</a>
             </div>
         </div>
     </section>
@@ -57,9 +64,47 @@
                         Gulyás, pörkölt, csipetke, kürtőskalács – minden étel, amit az asztalára hozunk, 
                         a magyar konyhakultúra tiszteletéből és szeretetéből születik.
                     </p>
-                    <div class="demo-badge">
-                        <small>⚠️ <em>Ez egy demo bemutató. A végleges szöveg az étterem tulajdonosával egyeztethető.</em></small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED DISHES SECTION -->
+    <section class="featured-dishes">
+        <div class="container">
+            <h2>Különleges Ételek</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-image" style="background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%); display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 5em;">🍲</span>
                     </div>
+                    <h3>Gulyásleves</h3>
+                    <p>Klasszikus magyar gulyás, hagymával, paprikával és ízletes marhadarabokkal</p>
+                    <span class="price">1.590 Ft</span>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image" style="background: linear-gradient(135deg, #A0522D 0%, #CD853F 100%); display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 5em;">🍖</span>
+                    </div>
+                    <h3>Marha Pörkölt</h3>
+                    <p>Ízletes, lassú tűzön készült pörkölt, tejfölös nokedlivel és friss kenyérrel</p>
+                    <span class="price">2.890 Ft</span>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image" style="background: linear-gradient(135deg, #DAA520 0%, #B8860B 100%); display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 5em;">🍰</span>
+                    </div>
+                    <h3>Somlói Galuska</h3>
+                    <p>Habos, csokoládés, diós rétegek vanília mártásban és krémes tejszínhabbal</p>
+                    <span class="price">1.490 Ft</span>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image" style="background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%); display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 5em;">🥘</span>
+                    </div>
+                    <h3>Csángó Lecsó</h3>
+                    <p>Paprikás lecsó, házias burgonyával és friss paradicsomsalátával</p>
+                    <span class="price">2.190 Ft</span>
                 </div>
             </div>
         </div>
@@ -68,10 +113,7 @@
     <!-- MENU SECTION -->
     <section class="menu" id="menu">
         <div class="container">
-            <h2>Étlap</h2>
-            <div class="demo-badge">
-                <small>⚠️ Az étlap és az árak <strong>demo adatok</strong>. A valódi étlap és árak az étterem tulajdonosával egyeztethető.</small>
-            </div>
+            <h2>Teljes Étlap</h2>
 
             <div class="menu-grid">
                 <!-- LEVESEK -->
@@ -214,17 +256,65 @@
         </div>
     </section>
 
-    <!-- HOURS & CONTACT SECTION -->
+    <!-- REVIEWS SECTION -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2>Ügyfeleink Véleménye</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Fantasztikus hely! Az ételek finomak, a kiszolgálás remek. Biztosan visszajövünk!"</p>
+                    <p class="review-author">- Ferenc K.</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Autentikus magyar konyha, igazi csángó hagyományok. Köszönjük!"</p>
+                    <p class="review-author">- Éva M.</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Már többször voltunk. Mindig finom, meleg szívből készített ételek. Ajánlom mindenkinek!"</p>
+                    <p class="review-author">- Péter L.</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Kedves személyzet, hangulatos hely. Az gulyás a legjobb, amit valaha ettem."</p>
+                    <p class="review-author">- Mária S.</p>
+                </div>
+            </div>
+            <div class="google-reviews-cta">
+                <p>🌟 Olvass több értékelést a Google-on »</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOURS & LOCATION SECTION -->
     <section class="hours-contact" id="hours">
         <div class="container">
-            <div class="hours-card">
-                <h3>⏰ Nyitvatartás</h3>
-                <div class="hours-info">
-                    <p><strong>Hétfő – Csütörtök:</strong> 11:00 – 21:00</p>
-                    <p><strong>Péntek – Szombat:</strong> 11:00 – 22:00</p>
-                    <p><strong>Vasárnap:</strong> 11:00 – 20:00</p>
+            <div class="hours-location-grid">
+                <div class="hours-card">
+                    <h3>⏰ Nyitvatartás</h3>
+                    <div class="hours-info">
+                        <p><strong>Hétfő – Csütörtök:</strong> 11:00 – 21:00</p>
+                        <p><strong>Péntek – Szombat:</strong> 11:00 – 22:00</p>
+                        <p><strong>Vasárnap:</strong> 11:00 – 20:00</p>
+                    </div>
                 </div>
-                <small class="demo-badge">⚠️ Demo nyitvatartás. Pontosítás szükséges!</small>
+                <div class="location-card">
+                    <h3>📍 Helyszín</h3>
+                    <p><strong>Alagút utca 1.</strong><br>1013 Budapest, I. kerület</p>
+                    <p class="location-subtitle">Könnyen megközelíthető helyszín, közlekedéssel vagy autóval</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GOOGLE MAPS SECTION -->
+    <section class="maps-section">
+        <div class="container">
+            <h2>Keress Fel Minket</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.0532770289403!2d19.03398931177286!3d47.504919371168796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc4eda68b1ef%3A0x1234567890!2sAlag%C3%BAt%20u.%201.%2C%201013%20Budapest!5e0!3m2!1shu!2shu!4v1234567890123" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -241,19 +331,18 @@
                     <small>Hívj minket foglaláshoz vagy kérdésekhez!</small>
                 </div>
                 <div class="contact-card">
-                    <h3>📍 Cím</h3>
-                    <p>Alagút utca 1.<br>1013 Budapest, I. kerület</p>
-                    <small>Könnyen megközelíthető helyszín</small>
-                </div>
-                <div class="contact-card">
                     <h3>📧 Email</h3>
                     <p><a href="mailto:info@kicsi-csango.hu" class="email-link">info@kicsi-csango.hu</a></p>
                     <small>Írj nekünk bármikor!</small>
                 </div>
+                <div class="contact-card">
+                    <h3>🕐 Nyitvatartás</h3>
+                    <p>H-Cs: 11:00-21:00<br>P-Szo: 11:00-22:00<br>Va: 11:00-20:00</p>
+                </div>
             </div>
 
             <div class="booking-section" id="booking">
-                <h3>Asztalfoglalás</h3>
+                <h3>📅 Asztalfoglalás</h3>
                 <form class="booking-form" onsubmit="handleBooking(event)">
                     <div class="form-group">
                         <label for="name">Név *</label>
@@ -279,8 +368,8 @@
                         <label for="message">Megjegyzés (opcionális)</label>
                         <textarea id="message" name="message" placeholder="Pl. allergia, speciális kérések..."></textarea>
                     </div>
-                    <button type="submit" class="submit-button">Asztal lefoglalása</button>
-                    <small class="form-note">A foglalást telefonon is megerősítjük!</small>
+                    <button type="submit" class="submit-button">✓ Asztal Lefoglalása</button>
+                    <small class="form-note">Foglalást telefonon is megerősítjük!</small>
                 </form>
             </div>
         </div>
@@ -290,7 +379,8 @@
     <footer>
         <div class="container">
             <p><strong>Kicsi Csángó Magyar Konyha</strong> © 2024</p>
-            <small>Demo weboldal értékesítési bemutatóhoz | Az adatok és árak demo jellegűek</small>
+            <p>Alagút utca 1., Budapest | +36 30 724 3676 | info@kicsi-csango.hu</p>
+            <small>Demo weboldal - Személyre szabás szükséges az igazi adatokkal</small>
         </div>
     </footer>
 
